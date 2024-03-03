@@ -1,0 +1,45 @@
+body {
+    background-color: grey;
+    overflow-y: hidden;
+    margin: none;
+    padding: none;
+}
+
+#canvas-container {
+    display: flex;
+    justify-content: center;
+    height: 98vh;
+}
+
+#uncropped-canvas {
+    display: none;
+}
+
+#cropped-canvas {
+    /* display: none; */
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+#thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1; /* Initial opacity set to 1 */
+    transition: opacity 1s ease; /* Transition opacity over 1 second */
+}
+
+#score {
+    font-family: monospace;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 3vw;
+
+}
+
+.display-on-start {
+    display: none;
+}
